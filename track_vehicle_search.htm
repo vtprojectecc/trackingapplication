@@ -1,0 +1,466 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel track_vehicle search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN vehicle_Type_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vehicle_Type}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="vehicle Type" 
+	
+	data-signal-error-for="vehicle_Type{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="vehicle_Type" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_vehicle_Type}">
+		{$label track_vehicle vehicle_Type }	</label>
+	<div class="r-search-option">
+		{$searchtype_vehicle_Type}
+	</div>
+	<div class="r-search-field">
+		{$vehicle_Type_editcontrol}	</div>
+	<div class="r-search-field">
+		{$vehicle_Type_editcontrol1}
+	</div>
+	
+</div>
+
+{END vehicle_Type_fieldblock}
+											
+{BEGIN Vechile_no__fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Vechile_no_}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Vechile no." 
+	
+	data-signal-error-for="Vechile_no_{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="Vechile_no_" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Vechile_no_}">
+		{$label track_vehicle Vechile_no_ }	</label>
+	<div class="r-search-option">
+		{$searchtype_Vechile_no_}
+	</div>
+	<div class="r-search-field">
+		{$Vechile_no__editcontrol}	</div>
+	<div class="r-search-field">
+		{$Vechile_no__editcontrol1}
+	</div>
+	
+</div>
+
+{END Vechile_no__fieldblock}
+											
+{BEGIN Assigned_Driver_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Assigned_Driver}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Assigned Driver" 
+	
+	data-signal-error-for="Assigned_Driver{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="Assigned_Driver" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Assigned_Driver}">
+		{$label track_vehicle Assigned_Driver }	</label>
+	<div class="r-search-option">
+		{$searchtype_Assigned_Driver}
+	</div>
+	<div class="r-search-field">
+		{$Assigned_Driver_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Assigned_Driver_editcontrol1}
+	</div>
+	
+</div>
+
+{END Assigned_Driver_fieldblock}
+											
+{BEGIN Driver_contact_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Driver_contact}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Driver contact" 
+	
+	data-signal-error-for="Driver_contact{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="Driver_contact" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Driver_contact}">
+		{$label track_vehicle Driver_contact }	</label>
+	<div class="r-search-option">
+		{$searchtype_Driver_contact}
+	</div>
+	<div class="r-search-field">
+		{$Driver_contact_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Driver_contact_editcontrol1}
+	</div>
+	
+</div>
+
+{END Driver_contact_fieldblock}
+											
+{BEGIN Route_Stopage_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Route_Stopage}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Route Stopage" 
+	
+	data-signal-error-for="Route_Stopage{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="Route_Stopage" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Route_Stopage}">
+		{$label track_vehicle Route_Stopage }	</label>
+	<div class="r-search-option">
+		{$searchtype_Route_Stopage}
+	</div>
+	<div class="r-search-field">
+		{$Route_Stopage_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Route_Stopage_editcontrol1}
+	</div>
+	
+</div>
+
+{END Route_Stopage_fieldblock}
+											
+{BEGIN vehicle_Status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vehicle_Status}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="vehicle Status" 
+	
+	data-signal-error-for="vehicle_Status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="vehicle_Status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_vehicle_Status}">
+		{$label track_vehicle vehicle_Status }	</label>
+	<div class="r-search-option">
+		{$searchtype_vehicle_Status}
+	</div>
+	<div class="r-search-field">
+		{$vehicle_Status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$vehicle_Status_editcontrol1}
+	</div>
+	
+</div>
+
+{END vehicle_Status_fieldblock}
+											
+{BEGIN Map_Status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Map_Status}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Map Status" 
+	
+	data-signal-error-for="Map_Status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="Map_Status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Map_Status}">
+		{$label track_vehicle Map_Status }	</label>
+	<div class="r-search-option">
+		{$searchtype_Map_Status}
+	</div>
+	<div class="r-search-field">
+		{$Map_Status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Map_Status_editcontrol1}
+	</div>
+	
+</div>
+
+{END Map_Status_fieldblock}
+											
+{BEGIN Address_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Address}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Address" 
+	
+	data-signal-error-for="Address{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="Address" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Address}">
+		{$label track_vehicle Address }	</label>
+	<div class="r-search-option">
+		{$searchtype_Address}
+	</div>
+	<div class="r-search-field">
+		{$Address_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Address_editcontrol1}
+	</div>
+	
+</div>
+
+{END Address_fieldblock}
+											
+{BEGIN Description_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Description}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Description" 
+	
+	data-signal-error-for="Description{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="Description" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Description}">
+		{$label track_vehicle Description }	</label>
+	<div class="r-search-option">
+		{$searchtype_Description}
+	</div>
+	<div class="r-search-field">
+		{$Description_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Description_editcontrol1}
+	</div>
+	
+</div>
+
+{END Description_fieldblock}
+											
+{BEGIN Last_Updated_by_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Last_Updated_by}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Last Updated by" 
+	
+	data-signal-error-for="Last_Updated_by{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="Last_Updated_by" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Last_Updated_by}">
+		{$label track_vehicle Last_Updated_by }	</label>
+	<div class="r-search-option">
+		{$searchtype_Last_Updated_by}
+	</div>
+	<div class="r-search-field">
+		{$Last_Updated_by_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Last_Updated_by_editcontrol1}
+	</div>
+	
+</div>
+
+{END Last_Updated_by_fieldblock}
+											
+{BEGIN Last_Updated_Time_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Last_Updated_Time}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Last Updated Time" 
+	
+	data-signal-error-for="Last_Updated_Time{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="Last_Updated_Time" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Last_Updated_Time}">
+		{$label track_vehicle Last_Updated_Time }	</label>
+	<div class="r-search-option">
+		{$searchtype_Last_Updated_Time}
+	</div>
+	<div class="r-search-field">
+		{$Last_Updated_Time_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Last_Updated_Time_editcontrol1}
+	</div>
+	
+</div>
+
+{END Last_Updated_Time_fieldblock}
+											
+{BEGIN Lat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Lat}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Lat" 
+	
+	data-signal-error-for="Lat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Lat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Lat}">
+		{$label track_vehicle Lat }	</label>
+	<div class="r-search-option">
+		{$searchtype_Lat}
+	</div>
+	<div class="r-search-field">
+		{$Lat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Lat_editcontrol1}
+	</div>
+	
+</div>
+
+{END Lat_fieldblock}
+											
+{BEGIN Lng_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Lng}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Lng" 
+	
+	data-signal-error-for="Lng{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="Lng" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Lng}">
+		{$label track_vehicle Lng }	</label>
+	<div class="r-search-option">
+		{$searchtype_Lng}
+	</div>
+	<div class="r-search-field">
+		{$Lng_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Lng_editcontrol1}
+	</div>
+	
+</div>
+
+{END Lng_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

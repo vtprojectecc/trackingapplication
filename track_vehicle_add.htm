@@ -1,0 +1,459 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel track_vehicle add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>View</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Edit</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN vehicle_Type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vehicle_Type}  r-vertical-field" 
+	data-fieldname="vehicle Type" 
+	data-signal-error-for="vehicle_Type{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="vehicle_Type" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vehicle_Type}">
+		{BEGIN vehicle_Type_label}{$label track_vehicle vehicle_Type }{END vehicle_Type_label}
+	</label>
+	<div class="r-edit-field">
+		{$vehicle_Type_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vehicle_Type">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END vehicle_Type_fieldblock}
+											
+{BEGIN Vechile_no__fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Vechile_no_}  r-vertical-field" 
+	data-fieldname="Vechile no." 
+	data-signal-error-for="Vechile_no_{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Vechile_no_" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Vechile_no_}">
+		{BEGIN Vechile_no__label}{$label track_vehicle Vechile_no_ }{END Vechile_no__label}
+	</label>
+	<div class="r-edit-field">
+		{$Vechile_no__editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Vechile_no_">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Vechile_no__fieldblock}
+											
+{BEGIN Assigned_Driver_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Assigned_Driver}  r-vertical-field" 
+	data-fieldname="Assigned Driver" 
+	data-signal-error-for="Assigned_Driver{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Assigned_Driver" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Assigned_Driver}">
+		{BEGIN Assigned_Driver_label}{$label track_vehicle Assigned_Driver }{END Assigned_Driver_label}
+	</label>
+	<div class="r-edit-field">
+		{$Assigned_Driver_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Assigned_Driver">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Assigned_Driver_fieldblock}
+											
+{BEGIN Driver_contact_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Driver_contact}  r-vertical-field" 
+	data-fieldname="Driver contact" 
+	data-signal-error-for="Driver_contact{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Driver_contact" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Driver_contact}">
+		{BEGIN Driver_contact_label}{$label track_vehicle Driver_contact }{END Driver_contact_label}
+	</label>
+	<div class="r-edit-field">
+		{$Driver_contact_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Driver_contact">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Driver_contact_fieldblock}
+											
+{BEGIN Route_Stopage_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Route_Stopage}  r-vertical-field" 
+	data-fieldname="Route Stopage" 
+	data-signal-error-for="Route_Stopage{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Route_Stopage" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Route_Stopage}">
+		{BEGIN Route_Stopage_label}{$label track_vehicle Route_Stopage }{END Route_Stopage_label}
+	</label>
+	<div class="r-edit-field">
+		{$Route_Stopage_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Route_Stopage">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Route_Stopage_fieldblock}
+											
+{BEGIN vehicle_Status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vehicle_Status}  r-vertical-field" 
+	data-fieldname="vehicle Status" 
+	data-signal-error-for="vehicle_Status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="vehicle_Status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vehicle_Status}">
+		{BEGIN vehicle_Status_label}{$label track_vehicle vehicle_Status }{END vehicle_Status_label}
+	</label>
+	<div class="r-edit-field">
+		{$vehicle_Status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vehicle_Status">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END vehicle_Status_fieldblock}
+											
+{BEGIN Map_Status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Map_Status}  r-vertical-field" 
+	data-fieldname="Map Status" 
+	data-signal-error-for="Map_Status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Map_Status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Map_Status}">
+		{BEGIN Map_Status_label}{$label track_vehicle Map_Status }{END Map_Status_label}
+	</label>
+	<div class="r-edit-field">
+		{$Map_Status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Map_Status">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Map_Status_fieldblock}
+											
+{BEGIN Address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Address}  r-vertical-field" 
+	data-fieldname="Address" 
+	data-signal-error-for="Address{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Address" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Address}">
+		{BEGIN Address_label}{$label track_vehicle Address }{END Address_label}
+	</label>
+	<div class="r-edit-field">
+		{$Address_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Address">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Address_fieldblock}
+											
+{BEGIN Description_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Description}  r-vertical-field" 
+	data-fieldname="Description" 
+	data-signal-error-for="Description{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Description" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Description}">
+		{BEGIN Description_label}{$label track_vehicle Description }{END Description_label}
+	</label>
+	<div class="r-edit-field">
+		{$Description_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Description">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Description_fieldblock}
+											
+{BEGIN Last_Updated_by_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Last_Updated_by}  r-vertical-field" 
+	data-fieldname="Last Updated by" 
+	data-signal-error-for="Last_Updated_by{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="Last_Updated_by" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Last_Updated_by}">
+		{BEGIN Last_Updated_by_label}{$label track_vehicle Last_Updated_by }{END Last_Updated_by_label}
+	</label>
+	<div class="r-edit-field">
+		{$Last_Updated_by_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Last_Updated_by">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Last_Updated_by_fieldblock}
+											
+{BEGIN Last_Updated_Time_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Last_Updated_Time}  r-vertical-field" 
+	data-fieldname="Last Updated Time" 
+	data-signal-error-for="Last_Updated_Time{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="Last_Updated_Time" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Last_Updated_Time}">
+		{BEGIN Last_Updated_Time_label}{$label track_vehicle Last_Updated_Time }{END Last_Updated_Time_label}
+	</label>
+	<div class="r-edit-field">
+		{$Last_Updated_Time_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Last_Updated_Time">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Last_Updated_Time_fieldblock}
+											
+{BEGIN Lat_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Lat}  r-vertical-field" 
+	data-fieldname="Lat" 
+	data-signal-error-for="Lat{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Lat" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Lat}">
+		{BEGIN Lat_label}{$label track_vehicle Lat }{END Lat_label}
+	</label>
+	<div class="r-edit-field">
+		{$Lat_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Lat">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Lat_fieldblock}
+											
+{BEGIN Lng_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Lng}  r-vertical-field" 
+	data-fieldname="Lng" 
+	data-signal-error-for="Lng{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="Lng" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Lng}">
+		{BEGIN Lng_label}{$label track_vehicle Lng }{END Lng_label}
+	</label>
+	<div class="r-edit-field">
+		{$Lng_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Lng">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Lng_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
